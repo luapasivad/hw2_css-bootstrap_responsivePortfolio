@@ -84,9 +84,9 @@ footer {
 }
 
 /* content format */
-
 .content {
     max-width: 960px;
+    width: 95%;
     margin: 30px 0px 0px 0px;
     margin-left: auto;
     margin-right: auto;
@@ -116,13 +116,18 @@ a {
 }
 
 input {
-    width: 912px; 
-    height: 26px; 
+    width: 100%;
+    max-width: 912px; 
+    height: 26px;
 }
 
 form {
     text-align: left;
     padding-bottom: 5px;
+}
+
+.formInput {
+    padding: 10px;
 }
 
 .message {
@@ -187,6 +192,8 @@ p {
 }
 
 @media screen and (max-width: 640px) {
+    
+    /* navbar */
     logo {
         left: 0;
         width: 100%;
@@ -214,4 +221,20 @@ p {
         margin: 0 auto;
         text-align: center;
     }
+    /* portfolio */
+    .folioImg1, .folioImg2, .folioImg3, .folioImg4, .folioImg5 {
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .hangmanText, .rpgText, .triviaText, .infoText, .rpsText {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+        top: -30%;
+    }
+
 }
